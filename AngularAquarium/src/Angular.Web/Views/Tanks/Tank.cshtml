@@ -1,0 +1,45 @@
+﻿
+@section scripts {
+    <script src="~/js/controllers/aquariumcontroller.js" type="text/javascript"></script>
+    <script src="~/js/controllers/tankcontroller.js" type="text/javascript"></script>
+}
+
+
+@{ViewData["Title"] = "Fish";
+}
+
+<body>
+    <video autoplay loop muted class="background">
+        <source src="https://static.videezy.com/system/resources/previews/000/003/282/original/Undersea_Exotic_Fish_Free_HD_Footage.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <table class="table m-t-2 table-transparent text-center table-hover" ng-controller="AquariumController as aqc" ng-init="aqc.GetInfo('@Model'); aqc.tankId = '@Model'">
+                    <tbody>
+                        <tr ng-repeat="fish in aqc.Fishes">
+                            <td>
+                                <a class="btn btn-link" style="font-weight:bolder;
+                        font-size:large; color:black" href="/tanks/{{aqc.tankId}}/fishes/{{fish.id}}">{{fish.name}}</a>
+                           
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="btn btn-info" href="~/tanks/@Model/fishadd">Add A Fish</a>
+                                <button class="btn btn-danger" ng-click="aqc.AddShark()">Add Shark</button>
+                                <a class="btn btn-info" href="~/home/tanks/">My Tanks</a>
+                            </td>
+                        </tr>
+                    </tbody>                  
+                </table>                                 
+                                   
+            </div> 
+        </div>
+    </div>
+</body>
+
+
+
+
+

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Add A Tank";
+}
+
+<body class="background-three">
+
+    <div class="row" ng-controller="TankController as tc" ng-cloak>
+
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Tanks</h3>
+                </div>
+                <ol class="list-group">
+                    <li class="list-group-item clearfix" @*ng-init="tank = {}" *@>
+                        <div class="col-sm-8">
+                            <div>
+                                <input type="text" class="form-control" placeholder="Name" ng-model="tank.name" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary" ng-click="tc.Add(tank)">Add a tank!</button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    </body>

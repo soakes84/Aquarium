@@ -1,0 +1,155 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-default {
+    background-color: #333 !important;
+}
+
+.form-underlined {
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: none;
+    border: 0;
+    border-bottom: solid 1px #000;
+    outline: 0;
+}
+
+.turtle-background {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/50/10/3e/50103e3bed5d50042f5b82a600c06d0f.jpg);
+    background-position: center 0;
+}
+
+.stingray-background {
+    background-image: url(http://www.caymanlandandsea.com/photogallery/Stingray%2520Underwater.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.starfish-background {
+    background-image: url(https://www.muralswallpaper.com//app/uploads/orange-starfish-underwater%EF%BB%BF-plain-1.jpg);
+}
+
+.h4 {
+    margin-top: 24px;
+}
+
+.background-one {
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/01/cf/31/01cf31bf81119e148261f458b1a33a49.jpg);
+}
+
+.background-two {
+    background-image: url(http://www.chillcover.com/wp-content/uploads/2015/03/Clear-Ocean-Water_Desktop_Background_chillcover.com_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-three {
+    background-image: url(http://i.imgur.com/QxaxUBm.jpg);
+}
+
+.background-four {
+    background-image: url(http://www.kargs.net/wallpaper/images/water.jpg);
+}
+
+
+
+.background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+
+.body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+
+.form-underlined::-webkit-input-placeholder {
+    color: #1e1e1e;
+}
+
+.watery-font {
+    font-family: 'Fontdiner Swanky', cursive;
+}
+
+.lg-text {
+    font-size: 7em;
+}
+
+.md-text {
+    font-size: 5em;
+}
+
+.text-water {
+    color: #61A5FF;
+}
+
+.sm-shadow {
+    text-shadow: 1px 1px 5px;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.m-t-1 {
+    margin-top: 10px;
+}
+
+.m-t-2 {
+    margin-top: 20px;
+}
+
+.m-t-3 {
+    margin-top: 60px;
+}
+
+.m-b-0 {
+    margin-bottom: 0;
+}
+
+.table-transparent {
+    background: rgba(255,255,255,.3);
+}
+
+.panel-transparent {
+    background: rgba(255,255,255,.3);
+}
+
+    .panel-transparent .panel-heading {
+        background: rgba(255,255,255,.4);
+    }
+
+.panel-transparent-register {
+    background: rgba(255,255,255,.55);
+}
+
+.panel-transparent-register .panel-heading-register {
+    background: rgba(255,255,255,.7);
+}
+
+
